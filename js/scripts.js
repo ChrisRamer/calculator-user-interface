@@ -1,5 +1,3 @@
-// Business logic:
-
 const add = function (number1, number2) {
 	return number1 + number2;
 };
@@ -16,10 +14,9 @@ const divide = function (number1, number2) {
 	return number1 / number2;
 };
 
-// Everything below this line is user interface logic:
-
 $(document).ready(function () {
 
+	// Add
 	$("form#add").submit(function (e) { 
 		e.preventDefault();
 		
@@ -31,6 +28,7 @@ $(document).ready(function () {
 		alert("The sum is " + result + "!");
 	});
 
+	// Subtract
 	$("form#subtract").submit(function (e) { 
 		e.preventDefault();
 
@@ -40,6 +38,18 @@ $(document).ready(function () {
 
 		//$("#subtractOutput").text(result); Outputs text to emtpy div element to display on page
 		alert("The difference is " + result + "!");
+	});
+
+	// Multiply
+	$("form#multiply").submit(function (e) { 
+		e.preventDefault();
+		
+		const number1 = parseInt($("#multiply1").val());
+		const number2 = parseInt($("#multiply2").val());
+		const result = multiply(number1, number2);
+
+		//$("#multiplyOutput").text(result); Outputs text to emtpy div element to display on page
+		alert("The product is " + result + "!");
 	});
 
 });
