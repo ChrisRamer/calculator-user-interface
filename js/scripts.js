@@ -24,7 +24,7 @@ $(document).ready(function () {
 		const number2 = parseInt($("#add2").val());
 		const result = add(number1, number2);
 
-		//$("#addOutput").text(result); Outputs text to emtpy div element to display on page
+		//$("#addOutput").text(result); //Outputs text to emtpy div element to display on page
 		alert("The sum is " + result + "!");
 	});
 
@@ -36,7 +36,7 @@ $(document).ready(function () {
 		const number2 = parseInt($("#subtract2").val());
 		const result = subtract(number1, number2);
 
-		//$("#subtractOutput").text(result); Outputs text to emtpy div element to display on page
+		//$("#subtractOutput").text(result); //Outputs text to emtpy div element to display on page
 		alert("The difference is " + result + "!");
 	});
 
@@ -48,7 +48,7 @@ $(document).ready(function () {
 		const number2 = parseInt($("#multiply2").val());
 		const result = multiply(number1, number2);
 
-		//$("#multiplyOutput").text(result); Outputs text to emtpy div element to display on page
+		//$("#multiplyOutput").text(result); //Outputs text to emtpy div element to display on page
 		alert("The product is " + result + "!");
 	});
 
@@ -60,7 +60,7 @@ $(document).ready(function () {
 		const number2 = parseInt($("#divide2").val());
 		const result = divide(number1, number2);
 
-		//$("#divideOutput").text(result); Outputs text to emtpy div element to display on page
+		//$("#divideOutput").text(result); //Outputs text to emtpy div element to display on page
 		alert("The quotient is " + result + "!");
 	});
 
