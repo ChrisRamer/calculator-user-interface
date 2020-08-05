@@ -52,4 +52,16 @@ $(document).ready(function () {
 		alert("The product is " + result + "!");
 	});
 
+	// Divide
+	$("form#divide").submit(function (e) { 
+		e.preventDefault();
+		
+		const number1 = parseInt($("#divide1").val());
+		const number2 = parseInt($("#divide2").val());
+		const result = divide(number1, number2);
+
+		//$("#divideOutput").text(result); Outputs text to emtpy div element to display on page
+		alert("The quotient is " + result + "!");
+	});
+
 });
