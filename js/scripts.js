@@ -19,6 +19,7 @@ const divide = function (number1, number2) {
 // Everything below this line is user interface logic:
 
 $(document).ready(function () {
+
 	$("form#add").submit(function (e) { 
 		e.preventDefault();
 		
@@ -26,6 +27,19 @@ $(document).ready(function () {
 		const number2 = parseInt($("#add2").val());
 		const result = add(number1, number2);
 
-		$("#output").text(result);
+		//$("#addOutput").text(result); Outputs text to emtpy div element to display on page
+		alert("The sum is " + result + "!");
 	});
+
+	$("form#subtract").submit(function (e) { 
+		e.preventDefault();
+
+		const number1 = parseInt($("#subtract1").val());
+		const number2 = parseInt($("#subtract2").val());
+		const result = subtract(number1, number2);
+
+		//$("#subtractOutput").text(result); Outputs text to emtpy div element to display on page
+		alert("The difference is " + result + "!");
+	});
+
 });
